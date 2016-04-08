@@ -17,11 +17,20 @@
         </environment>
     </head>
     <body>
-        <div style="position:relative; top: 0px; left: 0px;">
-            <img src="~/images/cruces.jpg" style="position: relative; width: 100%; height:auto" />
-            <img src="~/images/logo.png" style="position:absolute; width: 39%; height:auto;top: 105px; left: 820px" />
+
+        <div class="row">
+            <img src="~/images/cruces.jpg" style="position: relative; width: 100%; height:auto; top: -50px" />
+            <div class="container col-sm-offset-7">
+                <img src="~/images/logo.png" style="position:absolute ; width: 39%; height:auto; top: 115px" />
+            </div>
+            
+            </div> <!--Imagenes logo y fondo-->
+
+        <div id="rectangle" style="position:relative; top:-50px; width:101.1%; height:40px; background-color: #FDBB30;">
+
         </div>
-        <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <!-- <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,7 +50,8 @@
                     @await Html.PartialAsync("_LoginPartial")
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <div class="container body-content">
             @RenderBody()
             <hr />
