@@ -2,148 +2,141 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#General">General</a></li>
-        <li><a data-toggle="tab" href="#Emer">Contacto de Emergencia</a></li>
-        <li><a data-toggle="tab" href="#Alimentacion">Alimentación</a></li>
-    </ul>
+<br />
+<div class="container" id="formulario">
 
-    <div class="tab-content">
-        <div id="General" class="tab-pane fade in active">
             <form role="form">
-                
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <br />
+                <div class="container">
+                    <h2 style="border-bottom:8px solid #FDBB30">General</h2>
 
-                        <label for="ced">Cédula:</label>
-                        <input type="text" class="form-control" id="ced">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <br />
+
+                            <label for="ced">Cédula:</label>
+                            <input type="text" class="form-control" id="ced">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nom">Nombre:</label>
+                            <input type="text" class="form-control" id="nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail">Email:</label>
+                            <input type="text" class="form-control" id="mail">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nac">Nacionalidad:</label>
+                            <input type="text" class="form-control" id="nac">
+                        </div>
                     </div>
+                  
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <br />
 
-                    <div class="form-group">
-                        <label for="nom">Nombre:</label>
-                        <input type="text" class="form-control" id="nom">
-                    </div>
+                            <label for="tel">Teléfono:</label>
+                            <input type="text" class="form-control" id="tel">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="mail">Email:</label>
-                        <input type="text" class="form-control" id="mail">
-                    </div>
+                        <div class="form-group">
+                            <label for="dir">Dirección:</label>
+                            <textarea class="form-control" rows="4" id="dir"></textarea>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="nac">Nacionalidad:</label>
-                        <input type="text" class="form-control" id="nac">
+                        <label for="sexo">Sexo:</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="hombre">Hombre
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="mujer">Mujer
+                        </label>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="form-group">
+                <div class="container">
+
+                    <h2 style="border-bottom:8px solid #FDBB30">Contacto de Emergencia</h2>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <br />
+
+                            <label for="cont">Contacto:</label>
+                            <input type="text" class="form-control" id="cont">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telE">Teléfono:</label>
+                            <input type="text" class="form-control" id="telE">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mailE">Email:</label>
+                            <input type="text" class="form-control" id="mailE">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rel">Relación:</label>
+                            <input type="text" class="form-control" id="rel">
+                        </div>
+                      </div>
+                    </div>
+
+
+                <div class="container">
+                    <h2 style="border-bottom:8px solid #FDBB30">Alimentación</h2>
+                    <div class="col-sm-12">
                         <br />
 
-                        <label for="tel">Teléfono:</label>
-                        <input type="text" class="form-control" id="tel">
-                    </div>
+                        <label for="dieta">Dieta:</label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Sin Restricción
+                        </label>
 
-                    <div class="form-group">
-                        <label for="dir">Dirección:</label>
-                        <input type="text" class="form-control" id="dir">
-                    </div>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Vegetariano
+                        </label>
 
-                    <label for="sexo">Sexo:</label>
-                    <label class="radio-inline">
-                        <input type="radio" name="hombre">Hombre
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="mujer">Mujer
-                    </label>
-                </div>
-            </form>
-         </div>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Vegano
+                        </label>
 
-        <div id="Emer" class="tab-pane fade">
-            <form role="form">
-                <div class="col-sm-12">
-                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Otro
+                        </label>
+
+                        <br />
                         <br />
 
-                        <label for="cont">Contacto:</label>
-                        <input type="text" class="form-control" id="cont">
+                        <label for="pref">Preferencia:</label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Carne
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Cerdo
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Pescado
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Pollo
+                        </label>
+
+                        <br />
+                        <br />
+
+                        <label for="aler">Alergias:</label>
+                        <textarea class="form-control" rows="4" id="alergias"></textarea>
                     </div>
-
-                    <div class="form-group">
-                        <label for="telE">Teléfono:</label>
-                        <input type="text" class="form-control" id="telE">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="mailE">Email:</label>
-                        <input type="text" class="form-control" id="mailE">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="rel">Relación:</label>
-                        <input type="text" class="form-control" id="rel">
-                    </div>
-
-                </div>
-
-            </form>
-       </div>
-
-        <div id="Alimentacion" class="tab-pane fade">
-            <form role="form">
-                <div class="col-sm-12">
-                    <br />
-
-                    <label for="dieta">Dieta:</label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Sin Restricción
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Vegetariano
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Vegano
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Otro
-                    </label>
-
-                    <br />
-                    <br />
-
-                    <label for="pref">Preferencia:</label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Carne
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Cerdo
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Pescado
-                    </label>
-
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">Pollo
-                    </label>
-
-                    <br />
-                    <br />
-
-                    <label for="aler">Alergias:</label>
-                    <textarea class="form-control" rows="4" id="alergias"></textarea>
                 </div>
             </form>
         </div>
-
-    </div>
-</div>
 
 <!--
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" style="top: 500px">
